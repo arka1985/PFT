@@ -4,10 +4,10 @@ import pickle
 import pandas as pd
 
 app = Flask(__name__)
-model_FVC = pickle.load(open('model1.pkl', 'rb'))
-model_FVC_LLN = pickle.load(open('model2.pkl', 'rb'))
-model_FEV1 = pickle.load(open('model3.pkl', 'rb'))                                
-model_FEV1_LLN = pickle.load(open('model4.pkl', 'rb'))
+model1 = pickle.load(open('model1.pkl', 'rb'))
+model2 = pickle.load(open('model2.pkl', 'rb'))
+model3 = pickle.load(open('model3.pkl', 'rb'))                                
+model4 = pickle.load(open('model4.pkl', 'rb'))
                                  
 @app.route('/')
 def home():
