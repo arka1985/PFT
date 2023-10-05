@@ -2,6 +2,7 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 import pandas as pd
+from jinja2 import escape
 
 app = Flask(__name__)
 model1 = pickle.load(open('model1.pkl', 'rb'))
